@@ -1,0 +1,5 @@
+comandos:
+g++ -std=c++17 upload.cpp CSVUtils.cpp HashFile.cpp -I. -o upload
+ ./search data/entrada.dat 230
+g++ -std=c++17 src/findrec.cpp src/HashFile.cpp -o search
+ ./search data/artigos.dat IDbuscado
