@@ -53,7 +53,10 @@ long lerProxOffset(fstream &file, long offset) {
 void gravarHashing(const vector<Artigo> &artigos, const string &nomeArquivo) {
     fstream out(nomeArquivo, ios::binary | ios::in | ios::out);
     if (!out.is_open()) {
-        cerr << "[ERRO] Não foi possível abrir o arquivo de saída: " << nomeArquivo << endl;
+    // se não existir, cria
+        out.open(nomeArquivo, ios::binary | ios::out);
+        out.close();
+        out.open(nomeArquivo, ios::binary | ios::in | ios::out);
         return;
     }
 
