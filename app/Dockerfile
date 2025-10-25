@@ -24,4 +24,4 @@ ENV CSV_PATH=/data/input.csv \
     LOG_LEVEL=info
 
 # Comando padrão ao iniciar o contêiner
-CMD ["bash", "-lc", "echo 'Use: docker run ... upload|findrec|seek1|seek2; ls -l bin/"]
+CMD ["bash", "-lc", "echo 'Use: docker run ... upload|search|seek1|seek2'; ls -l bin/"]

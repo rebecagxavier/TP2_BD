@@ -57,7 +57,7 @@ void gravarHashing(const vector<Artigo> &artigos, const string &nomeArquivo) {
         out.open(nomeArquivo, ios::binary | ios::out);
         out.close();
         out.open(nomeArquivo, ios::binary | ios::in | ios::out);
-        return;
+        //return;
     }
 
     // inicializa área de cabeçalho (vetor de buckets)
