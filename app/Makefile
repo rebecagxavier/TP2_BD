@@ -34,8 +34,8 @@ docker-run-findrec:
 docker-run-seek1:
 	docker run --rm -v $(PWD)/data:/app/data tp2 ./bin/seek1 $(ID)
 
-#docker-run-seek2:
-    docker run --rm -v $(PWD)/data:/app/data tp2 ./bin/seek2 "$(TITLE)"
+docker-run-seek2:
+	docker run --rm -v $(PWD)/data:/app/data tp2 ./bin/seek2 "$(TITLE)"
 
 # Limpeza dos binários
 clean:
