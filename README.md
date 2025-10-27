@@ -3,6 +3,7 @@
 ⚙️ Compilação e execução local
 
 1. Compile os binários:
+   ```bash
    make build
 
 2. Execute o upload com o CSV:
