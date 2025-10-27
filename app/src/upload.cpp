@@ -5,6 +5,7 @@
 #include <chrono>
 #include <fstream>
 #include <functional>
+#include <climits>
 #include "../include/CSVUtils.hpp"
 #include "../include/HashFile.hpp"
 #include "../include/BPlusTree.hpp"
