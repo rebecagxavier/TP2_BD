@@ -1,5 +1,11 @@
 📦 TP2 — Instruções & Comandos
 
+📥 Preparando o arquivo CSV de entrada
+Antes de executar os programas, é necessário garantir que o arquivo input.csv esteja presente na pasta data/.
+Para isso, baixe esse artigo.csv.gz que consta no link abaixo, descompacte, nomeie como "input.csv" e o coloque em TP2_BD/app/data/ :)
+
+https://drive.google.com/file/d/1EVoP0d9Wwzj1O6eoFIkel9I3cpe43Gbv/view?usp=sharing
+
 ⚙️ Compilação e execução local
 
 1. Compile os binários:
