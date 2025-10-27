@@ -7,27 +7,34 @@
    make build
 
 2. Execute o upload com o CSV:
+   ```bash
    ./bin/upload ./data/input.csv
 
-3. Busque por ID diretamente no arquivo:
+4. Busque por ID diretamente no arquivo:
+   ```bash
    ./bin/findrec ./data/artigos.dat 230
 
 4.Busque por título (índice secundário):
+   
    ./bin/seek2 "Título do Artigo"
 
 🐳 Execução via Docker
 
 1. Construa a imagem:
+   ```bash
    make docker-build
 
-2. Execute o upload:
+3. Execute o upload:
+   ```bash
    make docker-run-upload
 
-3. Busque por ID:
+5. Busque por ID:
+   ```bash
    make docker-run-seek1 ID=230
    make docker-run-findrec ID=230
 
-4. Busque por título:
+7. Busque por título:
+   ```bash
    make docker-run-seek2 TITLE="Título do Artigo"
 
 🧼 Limpeza
@@ -37,6 +44,7 @@
 🛠️ Corrigindo erro de indentação no Makefile
    Se ao rodar make aparecer o erro: Makefile:xx: *** missing separator.  Stop.
    Use este comando para corrigir automaticamente as linhas que deveriam começar com TAB:
+   ```bash
    perl -pe 's/^(    )/\t/' Makefile > Makefile.fix && mv Makefile.fix Makefile
 
 
