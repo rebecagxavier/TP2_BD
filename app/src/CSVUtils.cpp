@@ -10,6 +10,9 @@
 using namespace std;
 
 // --- Limpa caracteres indesejados, como <i>, &aacute;, etc. ---
+// forward declaration: normalize helper is defined later in this file
+static std::string normalizeToUtf8(const std::string &inp);
+
 string limparCampo(string campo) {
     if (campo.size() >= 2 && campo.front() == '"' && campo.back() == '"')
         campo = campo.substr(1, campo.size() - 2);
